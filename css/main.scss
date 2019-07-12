@@ -426,16 +426,21 @@ img { max-width: 100%; height:auto;vertical-align: middle; border-style: none; }
         }
     }
     &-bl { display: block; width: 100%; max-width: 346px; margin: 0 auto; 
-        &-ttl { font-weight: 500; font-size: 24px; line-height: 112%; height: 78px; color: #2A2B34; margin-top: 25px; display: block; }
+        &-ttl { font-weight: 500; font-size: 24px; line-height: 112%; height: 78px; overflow: hidden; color: #2A2B34; margin-top: 25px; display: block; }
         &-date { font-weight: 500; font-size: 16px; line-height: 100%; color: #A9ACB8; margin-top: 19px; display: block; }
     }
 }
 /*analit*/
+@media (max-width: 575px){
+    .analit-bl-ttl {height: auto;}
+}
 @media (min-width: 576px){
     .analit-container {max-width: 540px;max-width: 91vw;}
+    .analit-bl-ttl {height: auto;}
 }
 @media (min-width: 768px){
     .analit-container {max-width: 720px;}
+    .analit-bl-ttl {height: auto;}
 }
 @media (min-width: 992px){
     .analit-container {max-width: 960px;}

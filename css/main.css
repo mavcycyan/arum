@@ -1077,6 +1077,7 @@ img {
       font-size: 24px;
       line-height: 112%;
       height: 78px;
+      overflow: hidden;
       color: #2A2B34;
       margin-top: 25px;
       display: block; }
@@ -1089,13 +1090,22 @@ img {
       display: block; }
 
 /*analit*/
+@media (max-width: 575px) {
+  .analit-bl-ttl {
+    height: auto; } }
 @media (min-width: 576px) {
   .analit-container {
     max-width: 540px;
-    max-width: 91vw; } }
+    max-width: 91vw; }
+
+  .analit-bl-ttl {
+    height: auto; } }
 @media (min-width: 768px) {
   .analit-container {
-    max-width: 720px; } }
+    max-width: 720px; }
+
+  .analit-bl-ttl {
+    height: auto; } }
 @media (min-width: 992px) {
   .analit-container {
     max-width: 960px; } }
