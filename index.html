@@ -17,7 +17,9 @@
     <link rel="stylesheet" href="css/lightslider.css" type="text/css" />
 
 	<link href="css/main.css" rel="stylesheet">
-	
+    <link rel="stylesheet" href="css/style.css">
+    <link rel="stylesheet" href="css/mobile.css">
+    
 	<!--[if lt IE 9]>
 	<script src="https://oss.maxcdn.com/libs/html5shiv/3.7.0/html5shiv.js"></script>
 	<script src="https://oss.maxcdn.com/libs/respond.js/1.4.2/respond.min.js"></script>
@@ -32,51 +34,54 @@
 
 <body>
 
-<header>
-    <div class="h-container">
-        <div class="h-col">
-            <a href="#" class="h-logo" title="Arum"><img src="img/logo.svg" alt=""></a>
-        </div>
-        <div class="h-col">
-            <div class="h-right">
-                <a href="#" class="h-call">Заказать звонок</a>
-                <a href="tel:+611800930987" class="h-phn">+6 11 800 93 09 87</a>
-            </div>
-        </div>
-    </div>
-    <div class="h-btm">
-        <div class="h-container">
-            <div class="h-col-left">
-                <div class="h-menu">
-                    <ul>
-                        <li><a href="#" title="Компания">Компания</a></li>
-                        <li><a href="#" title="Торговля">Торговля</a></li>
-                        <li><a href="#" title="В помощь трейдеру">В помощь трейдеру</a></li>
-                        <li><a href="#" title="Клиентам">Клиентам</a></li>
-                        <li><a href="#" title="Обучение">Обучение</a></li>
-                    </ul>
+    <header class="header">
+        <div class="header_mobile ">
+            <div class="header_menu-left">
+                <div class="header_mobile-menu">
+                    <img src="img/Menu.png" alt="" class="header_img">
+                </div>
+                <div class="header_logo">
+                    <img src="img/Logo_Old.png" alt="" class="header_img">
                 </div>
             </div>
-            <div class="h-col-right">
-                <div class="h-btm-right">
-                    <div class="h-lang">
-                        <span class="cur">RU</span>
-                        <div class="h-lang-hidden">
-                            <span>EN</span>
-                        </div>
+            <div class="header_menu-right">
+                <div class="header_language">RU</div>
+                <img src="img/Rectangle%204.png" alt="" class="header_click">
+                <img src="img/Account.png" alt="" class="header_person">
+            </div>
+        </div>
+        <div class="header_contacts">
+            <div class="header_content wrapper">
+                <div class="header_logo">
+                    <img src="img/Logo_Old.png" alt="" class="header_img">
+
+                </div>
+                <div class="header_info">
+                    <div class="header_text">Заказать звонок</div>
+                    <div class="header_number">+6 11 800 93 09 87</div>
+                </div>
+            </div>
+        </div>
+        <div class="header_menu">
+            <div class="header_content wrapper">
+                <nav class="header_navigation">
+                    <a href="" class="header_link">Компания</a>
+                    <a href="" class="header_link">Торговля</a>
+                    <a href="" class="header_link">В помощь трейдеру</a>
+                    <a href="" class="header_link">Клиентам</a>
+                    <a href="" class="header_link">Обучение</a>
+                </nav>
+                <div class="header_info header_info__menu">
+                    <div class="header_language">RU</div>
+                    <img src="img/Rectangle%204.png" alt="" class="header_click">
+                    <div class="header_button">
+                        <a class="button">Войти</a>
                     </div>
-                    <a href="#" class="h-btn">Войти</a>
                 </div>
             </div>
         </div>
-    </div>
-</header>
-<script>
-    $('.h-lang').click(function(){
-        $(this).find('.h-lang-hidden').toggleClass('active');
-    });
-</script>
-<div class="wrapper">
+    </header>
+<div class="wrapper_main">
     <div class="main">
         <div class="main-container">
             <div class="main-col">
@@ -87,6 +92,7 @@
                 <div class="main-txt">
                     Сделки по лучшим ценам, за счет сотрудничества <br>с крупнейшими поставщиками ликвидности.
                 </div>
+                <div class="main-mobimg"><img src="img/main-man.png" alt=""></div>
                 <div class="main-btns">
                     <a href="#" class="main-open">Открыть счет</a>
                     <a href="#" class="main-demo">Демо счет</a>
@@ -308,9 +314,181 @@
             </div>
         </div>
     </div>
+    <div class="platf">
+        <div class="platf-container">
+            <div class="platf-col">
+                <div class="platf-img"><img src="img/platf-img.png" alt=""></div>
+            </div>
+            <div class="platf-col">
+                <div class="platf-ttl">Работайте в платформе <br>последнего поколения <br>Metatrader 5</div>
+                <div class="platf-btns">
+                    <a href="#" class="platf-more">Больше о MT5</a>
+                    <a href="#" class="platf-dwnl">Скачать</a>
+                </div>
+            </div>
+        </div>
+    </div>
+    <div class="pay">
+        <div class="pay-container">
+            <div class="pay-ttl">Способы оплаты</div>
+            <div class="pay-cont">
+                <div class="pay-col">
+                    <div class="pay-bl">
+                        <div class="pay-bl-img"><img src="img/pay1.png" alt=""></div>
+                    </div>
+                </div>
+                <div class="pay-col">
+                    <div class="pay-bl">
+                        <div class="pay-bl-img"><img src="img/pay2.png" alt=""></div>
+                    </div>
+                </div>
+                <div class="pay-col">
+                    <div class="pay-bl">
+                        <div class="pay-bl-img"><img src="img/pay3.png" alt=""></div>
+                    </div>
+                </div>
+                <div class="pay-col">
+                    <div class="pay-bl">
+                        <div class="pay-bl-img"><img src="img/pay4.png" alt=""></div>
+                    </div>
+                </div>
+                <div class="pay-col">
+                    <div class="pay-bl">
+                        <div class="pay-bl-img"><img src="img/pay5.png" alt=""></div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <div class="analit">
+        <div class="analit-container">
+           <div class="analit-top">
+               <div class="analit-ttl">Аналитика от экспертов</div>
+               <div class="analit-btns"><div class="prev"></div><div class="next"></div></div>
+           </div>
+            
+            <div class="analit-slider">
+               <ul id="analit-slider">
+                   <li>
+                       <span class="analit-bl">
+                           <a href="#" class="analit-bl-img"><img src="img/analit1.jpg" alt=""></a>
+                           <a href="#" class="analit-bl-ttl">Трамп не хочет бесплатно защищать морские пути, а Россия – отдавать долю...</a>
+                           <a href="#" class="analit-bl-date">14 минут назад</a>
+                       </span>
+                   </li>
+                   <li>
+                       <span class="analit-bl">
+                           <a href="#" class="analit-bl-img"><img src="img/analit2.jpg" alt=""></a>
+                           <a href="#" class="analit-bl-ttl">Чем грозит Apple торговая война?</a>
+                           <a href="#" class="analit-bl-date">3 часа назад</a>
+                       </span>
+                   </li>
+                   <li>
+                       <span class="analit-bl">
+                           <a href="#" class="analit-bl-img"><img src="img/analit3.jpg" alt=""></a>
+                           <a href="#" class="analit-bl-ttl">Прогноз недели: судьба нефти оказалась в руках Вашингтона и Тегерана</a>
+                           <a href="#" class="analit-bl-date">Вчера в 23:12</a>
+                       </span>
+                   </li>
+                   <li>
+                       <span class="analit-bl">
+                           <a href="#" class="analit-bl-img"><img src="img/analit1.jpg" alt=""></a>
+                           <a href="#" class="analit-bl-ttl">Трамп не хочет бесплатно <br>защищать морские пути, а <br>Россия – отдавать долю...</a>
+                           <a href="#" class="analit-bl-date">14 минут назад</a>
+                       </span>
+                   </li>
+               </ul>
+            </div>
+        </div>
+    </div>
+    <div class="quest">
+        <div class="quest-container">
+            <div class="quest-ttl">Остались вопросы?</div>
+            <div class="quest-txt">Введите свои данные и через некоторое время наш менеджер свяжется с вами.</div>
+            <div class="quest-form">
+                <form action="">
+                    <div class="quest-input"><input type="text" placeholder="Имя"></div>
+                    <div class="quest-input"><input type="text" placeholder="Телефон"></div>
+                    <div class="quest-btn"><button type="submit">Отправить</button></div>
+                </form>
+            </div>
+        </div>
+    </div>
 </div>    
-<footer>
-
+<footer class="footer">
+    <div class="footer_mobile">
+        <div class="footer_mobile-social">
+            <img src="img/Logo_Old.png" alt="" class="footer_logo">
+            <div class="footer_social">
+                <div class="footer_item">
+                    <img src="img/insta.png" alt="" class="footer_insta">
+                </div>
+                <div class="footer_item">
+                    <img src="img/twittter.png" alt="" class="footer_twitter">
+                </div>
+                <div class="footer_item">
+                    <img src="img/fb.png" alt="" class="footer_fb">
+                </div>
+            </div>
+        </div>
+        <div class="footer_mobile-numbers">
+            <div class="footer_subtitle">Телефон</div>
+            <div class="footer_connection">8 (800) 111-24-24</div>
+            <div class="footer_subtitle">E-mail</div>
+            <div class="footer_connection">info@arumtrade.com</div>
+        </div>
+        <div class="footer_mobile-politics">
+            <span class="footer_span">Политика конфиденциальности</span>
+            <span class="footer_span">Уведомление о рисках</span>
+            <span class="footer_official">© 2019 Arum Trade</span>
+        </div>
+    </div>
+    <div class="footer_main">
+        <div class="footer_content wrapper">
+            <div class="footer_information">
+                <img src="img/Logo_big.png" alt="" class="footer_logo">
+                <div class="footer_text">
+                    <div class="footer_p">
+                        <p>ARUM Trade LTD является инвестиционной компанией,</p>
+                        <p>учрежденной и зарегистрированной в соответствии с</p>
+                        <p>законодательством Республики Вануату.</p>
+                    </div>
+                </div>
+                <div class="footer_social">
+                    <div class="footer_item">
+                        <img src="img/insta.png" alt="" class="footer_insta">
+                    </div>
+                    <div class="footer_item">
+                        <img src="img/twittter.png" alt="" class="footer_twitter">
+                    </div>
+                    <div class="footer_item">
+                        <img src="img/fb.png" alt="" class="footer_fb">
+                    </div>
+                </div>
+            </div>
+            <div class="footer_contacts">
+                <div class="footer_title">Контакты</div>
+                <div class="footer_subtitle">Телефон</div>
+                <div class="footer_connection">8 (800) 111-24-24</div>
+                <div class="footer_subtitle">E-mail</div>
+                <div class="footer_connection">info@arumtrade.com</div>
+            </div>
+            <div class="footer_links">
+                <div class="footer_title">Основные ссылки</div>
+                <a href="" class="footer_link">Компания</a>
+                <a href="" class="footer_link">Торговля</a>
+                <a href="" class="footer_link">В помощь трейдеру</a>
+                <a href="" class="footer_link">Клиентам</a>
+                <a href="" class="footer_link">Обучение</a>
+            </div>
+        </div>
+    </div>
+    <div class="footer_politics">
+        <div class="footer_content wrapper">
+            <span class="footer_span">Политика конфиденциальности   |   Уведомление о рисках</span>
+            <span class="footer_official">© 2019 Arum Trade</span>
+        </div>
+    </div>
 </footer>
 
 <div style="display:none;">
@@ -341,20 +519,20 @@
 <script type="text/javascript" src="js/lightslider.min.js"></script>
 <script>
 $(document).ready(function() {		
-    $('#works-sl').lightSlider({
-        item:1,
+    var analit = $('#analit-slider').lightSlider({
+        item:3,
         auto:false,
-        autoWidth:true,
+        autoWidth:false,
         loop:false,
         pause: 4000,
         speed:1000,
-        controls:true,
-        enableDrag:true,
-        enableTouch:true,
+        controls:false,
+        enableDrag:false,
+        enableTouch:false,
         freeMove:false,
         pager:false, 
         onSliderLoad: function() {
-                $('#works-sl').removeClass('cS-hidden');
+                $('#analit-slider').removeClass('cS-hidden');
         },
         responsive : [
         {
@@ -364,6 +542,13 @@ $(document).ready(function() {
         ]
 
         });
+    
+    $('.analit .prev').click(function(){
+        analit.goToPrevSlide();       
+    });    
+    $('.analit .next').click(function(){
+        analit.goToNextSlide();        
+    });
 });
 </script>
    

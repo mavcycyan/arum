@@ -1,0 +1,144 @@
+/* Fot 1080px */
+
+/* Start header */
+.header_mobile {
+    display: none;
+    justify-content: space-between;
+    padding: 0 10px;
+}
+.header_menu-left,
+.header_menu-right {
+    display: flex;
+    align-items: center;
+}
+.header_img {
+    display: flex;
+    align-items: center;
+}
+.menuNavigationOpen {
+    display: flex;
+}
+@media screen and (max-width: 1080px){
+    .header_contacts,
+    .header_menu {
+        display: none;
+    }
+    .header_mobile {
+        display: flex;
+    }
+}
+/* End header */
+
+/* Start platform */
+@media screen and (max-width: 1080px){
+    .wrapper {
+        padding: 0 40px;
+    }
+    .platform_title {
+        font-size: 32px;
+    }
+
+    .platform_subtitle {
+        font-size: 16px;
+    }
+    .platform_button {
+        padding: 18px 62px;
+        background: #FFFFFF;
+        border-radius: 2px;
+        max-width: 245px;
+    }
+}
+/* End platform */
+
+/* Start footer */
+@media screen and (max-width: 1080px){
+    .footer_title,
+    .footer_links {
+        display: none;
+    }
+    .footer_item {
+        min-width: 40px;
+    }
+    .footer_insta {
+        padding: 11px;
+    }
+    .footer_twitter {
+        padding: 12px 10px;
+    }
+    .footer_fb {
+        padding: 10px 15px;
+    }
+    .footer_subtitle {
+        font-size: 12px;
+    }
+    .footer_connection {
+        font-size: 16px;
+    }
+}
+/* End footer */
+
+/* Start footer for 480px */
+.footer_mobile {
+    display: none;
+}
+.footer_mobile-social {
+    padding: 24px 0;
+    display: flex;
+    justify-content: space-between;
+    width: 100%;
+    align-items: center;
+    border-bottom: 1px solid #EBECF2;
+}
+.footer_mobile-numbers,
+.footer_mobile-politics {
+    text-align: center;
+    border-bottom: 1px solid #EBECF2;
+}
+.footer_mobile-numbers {
+    padding: 24px 0 8px;
+}
+.footer_mobile-politics {
+    padding: 16px 0 133px;
+    display: flex;
+    flex-direction: column;
+}
+
+
+@media screen and (min-width: 768px) {
+    .footer_mobile {
+        display: none;
+    }
+    .footer_logo,
+    .footer_social {
+        padding: 0 20px;
+
+    }
+    .footer_logo {
+        padding-bottom: 0;
+    }
+    .footer_social {
+        padding-top: 0;
+        width: 50%;
+    }
+    .footer_official {
+        padding-top: 24px;
+        text-align: center;
+
+    }
+    .footer span:nth-child(2) {
+        padding-top: 5px;
+    }
+    .footer_main,
+    .footer_politics {
+        display: block;
+    }
+}
+@media (max-width: 768px) {
+    .footer_mobile {
+        display: block;
+    }
+    .footer_main,
+    .footer_politics {
+        display: none;
+    }
+}
