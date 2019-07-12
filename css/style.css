@@ -112,6 +112,20 @@ img {
     line-height: 40px;
     text-transform: uppercase;
     color: var(--mainColor);
+    position: relative;
+    cursor: pointer;
+}
+.header_language-hidden {
+    display: none;
+    position: absolute;
+    top: 100%;
+    left: -5px;
+    background: #fbfbfd;
+    width: calc(100% + 10px);
+    text-align: center;
+}
+.header_language-hidden.active {
+    display: block;
 }
 /* Start platform */
 .platform {

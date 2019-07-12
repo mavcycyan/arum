@@ -72,7 +72,11 @@
                     <a href="" class="header_link">Обучение</a>
                 </nav>
                 <div class="header_info header_info__menu">
-                    <div class="header_language">RU</div>
+                    <div class="header_language"><span>RU</span>
+                        <div class="header_language-hidden">
+                            <span>EN</span>
+                        </div>
+                    </div>
                     <img src="img/Rectangle%204.png" alt="" class="header_click">
                     <div class="header_button">
                         <a class="button">Войти</a>
@@ -81,6 +85,11 @@
             </div>
         </div>
     </header>
+    <script>
+        $('.header_language span').click(function(){
+            $('.header_language-hidden').toggleClass('active');
+        });
+    </script>
 <div class="wrapper_main">
     <div class="main">
         <div class="main-container">
