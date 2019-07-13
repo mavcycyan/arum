@@ -77,6 +77,7 @@ img {
     line-height: 100%;
     color: var(--mainColor);
 }
+a.header_text {text-transform: none;}
 .header_number {
     font-size: 16px;
     line-height: 100%;

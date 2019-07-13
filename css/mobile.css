@@ -2,6 +2,7 @@
 
 /* Start header */
 .header_mobile {
+    position: relative;
     display: none;
     justify-content: space-between;
     padding: 0 10px;
@@ -10,6 +11,9 @@
 .header_menu-right {
     display: flex;
     align-items: center;
+}
+.header_mobile-menu {
+    cursor: pointer;
 }
 .header_img {
     display: flex;
@@ -26,6 +30,20 @@
     .header_mobile {
         display: flex;
     }
+}
+
+.header_menu-points {display: none;position: absolute;left: 0;background: #fff; width: 100%;top: 60px; z-index: 2;}
+.header_menu-points.active {display: block;}
+.header_menu-points .header_navigation {
+    flex-direction: column;
+    width: 100%;
+    align-items: center;
+    justify-content: center;
+}
+
+.header_menu-points .header_navigation .header_link {
+    display: block;
+    padding: 10px;
 }
 /* End header */
 

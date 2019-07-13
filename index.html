@@ -15,6 +15,7 @@
    <link href="https://fonts.googleapis.com/css?family=Roboto:400,500,700&display=swap" rel="stylesheet">
    
     <link rel="stylesheet" href="css/lightslider.css" type="text/css" />
+    <link rel="stylesheet" href="fancybox/jquery.fancybox.css" type="text/css" />
 
 	<link href="css/main.css" rel="stylesheet">
     <link rel="stylesheet" href="css/style.css">
@@ -40,14 +41,28 @@
                 <div class="header_mobile-menu">
                     <img src="img/Menu.png" alt="" class="header_img">
                 </div>
-                <div class="header_logo">
+                <a href="#" class="header_logo">
                     <img src="img/Logo_Old.png" alt="" class="header_img">
-                </div>
+                </a>
             </div>
             <div class="header_menu-right">
-                <div class="header_language">RU</div>
+                <div class="header_language"><span>RU</span>
+                    <div class="header_language-hidden">
+                        <span>EN</span>
+                    </div>
+                </div>
                 <img src="img/Rectangle%204.png" alt="" class="header_click">
                 <img src="img/Account.png" alt="" class="header_person">
+            </div>
+            <div class="header_menu-points">
+                <nav class="header_navigation">
+                    <a href="" class="header_link">Компания</a>
+                    <a href="" class="header_link">Торговля</a>
+                    <a href="" class="header_link">В помощь трейдеру</a>
+                    <a href="" class="header_link">Клиентам</a>
+                    <a href="" class="header_link">Обучение</a>
+                </nav>
+                
             </div>
         </div>
         <div class="header_contacts">
@@ -57,8 +72,8 @@
 
                 </div>
                 <div class="header_info">
-                    <div class="header_text">Заказать звонок</div>
-                    <div class="header_number">+6 11 800 93 09 87</div>
+                    <a href="#" class="header_text">Заказать звонок</a>
+                    <a href="tel:+611800930987" class="header_number">+6 11 800 93 09 87</a>
                 </div>
             </div>
         </div>
@@ -79,7 +94,7 @@
                     </div>
                     <img src="img/Rectangle%204.png" alt="" class="header_click">
                     <div class="header_button">
-                        <a class="button">Войти</a>
+                        <a href="#" class="button">Войти</a>
                     </div>
                 </div>
             </div>
@@ -89,6 +104,9 @@
         $('.header_language span').click(function(){
             $('.header_language-hidden').toggleClass('active');
         });
+        $('.header_mobile-menu').click(function(){
+            $('.header_menu-points').toggleClass('active');
+        });    
     </script>
 <div class="wrapper_main">
     <div class="main">
@@ -464,37 +482,37 @@
                     </div>
                 </div>
                 <div class="footer_social">
-                    <div class="footer_item">
+                    <a href="#" class="footer_item" target="_blank">
                         <img src="img/insta.png" alt="" class="footer_insta">
-                    </div>
-                    <div class="footer_item">
+                    </a>
+                    <a href="#" class="footer_item" target="_blank">
                         <img src="img/twittter.png" alt="" class="footer_twitter">
-                    </div>
-                    <div class="footer_item">
+                    </a>
+                    <a href="#" class="footer_item" target="_blank">
                         <img src="img/fb.png" alt="" class="footer_fb">
-                    </div>
+                    </a>
                 </div>
             </div>
             <div class="footer_contacts">
                 <div class="footer_title">Контакты</div>
                 <div class="footer_subtitle">Телефон</div>
-                <div class="footer_connection">8 (800) 111-24-24</div>
+                <a href="tel:88001112424" class="footer_connection">8 (800) 111-24-24</a>
                 <div class="footer_subtitle">E-mail</div>
-                <div class="footer_connection">info@arumtrade.com</div>
+                <a href="mailto:info@arumtrade.com" class="footer_connection">info@arumtrade.com</a>
             </div>
             <div class="footer_links">
                 <div class="footer_title">Основные ссылки</div>
-                <a href="" class="footer_link">Компания</a>
-                <a href="" class="footer_link">Торговля</a>
-                <a href="" class="footer_link">В помощь трейдеру</a>
-                <a href="" class="footer_link">Клиентам</a>
-                <a href="" class="footer_link">Обучение</a>
+                <a href="#" class="footer_link">Компания</a>
+                <a href="#" class="footer_link">Торговля</a>
+                <a href="#" class="footer_link">В помощь трейдеру</a>
+                <a href="#" class="footer_link">Клиентам</a>
+                <a href="#" class="footer_link">Обучение</a>
             </div>
         </div>
     </div>
     <div class="footer_politics">
         <div class="footer_content wrapper">
-            <span class="footer_span">Политика конфиденциальности   |   Уведомление о рисках</span>
+            <span class="footer_span"><a href="#">Политика конфиденциальности</a>   |   <a href="#">Уведомление о рисках</a></span>
             <span class="footer_official">© 2019 Arum Trade</span>
         </div>
     </div>
@@ -505,7 +523,6 @@
         <div class="clearfix"></div>
         <div class="container">
             <form action="" method="" class="row">
-                <div class="col-12 col-lg-6 order-2 order-lg-1">
                     <div class="modal_auth-bl">
                         <input name="mail" type="text" placeholder="E-mail" required />
                      </div> 
@@ -513,13 +530,8 @@
                         <input name="pass" type="password" placeholder="Пароль" required /> 
                      </div>  
                     <div class="modal_auth-bl">
-                        <button type="submit"><span>Войти</span></button> 
-                        <a href="#" class="modal_auth-bl-forg_pass fp">Напомнить пароль</a> 
-                     </div>                                            
-                </div>
-                <div class="col-12 col-lg-6 order-1 order-lg-2">
-                    <div class="modal_auth-ttl">Вход</div>
-                </div>               
+                        <button type="submit"><span>Заказать</span></button> 
+                     </div>              
             </form>
         </div>			
     </div>    
@@ -563,6 +575,7 @@ $(document).ready(function() {
    
     
 <script type="text/javascript" src="fancybox/jquery.fancybox.pack.js" ></script>
+<script type="text/javascript" src="js/main.js" ></script>
 
 </body>
 </html>
